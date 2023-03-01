@@ -15,16 +15,16 @@ did:kaname:<method-specific-id>
 ```
 did-kaname:       "did:kaname:" + namespace? + ":" + member? 
 member:    　　　　　　　　　　  address
-namespace:        [0-9]{1,64} | address
+namespace:        (ALPHA|DIGIT)+ | address
 adderss:          according to [CAIP-10]
 ```    
 
 for examples:
 ```did
-did:kaname:eip155:1:0x4Ac5EC62CeA97De5cF3a58BD9EF41FfAe911363D:eip155:1:0xDB10E4a083B87e803594c12c679422dCe5FCCCB9:
+did:kaname:eip155:1:0x4Ac5EC62CeA97De5cF3a58BD9EF41FfAe911363D:eip155:1:0xDB10E4a083B87e803594c12c679422dCe5FCCCB9
 did:kaname:eip155:1:0x4Ac5EC62CeA97De5cF3a58BD9EF41FfAe911363D:
-did:kaname::eip155:1:0xDB10E4a083B87e803594c12c679422dCe5FCCCB9:
-did:kaname:message:eip155:1:0xDB10E4a083B87e803594c12c679422dCe5FCCCB9:
+did:kaname::eip155:1:0xDB10E4a083B87e803594c12c679422dCe5FCCCB9
+did:kaname:message:eip155:1:0xDB10E4a083B87e803594c12c679422dCe5FCCCB9
 ```
 
 Its corresponding DID document is as follows:
